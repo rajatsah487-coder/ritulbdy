@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Ritul!</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Dancing+Script:wght@500;700&family=Tiro+Devanagari+Hindi:ital@0;1&family=Hind:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="room"></div>
+<div class="leak l1"></div><div class="leak l2"></div><div class="flare"></div>
+<canvas id="fx"></canvas>
+
+<main>
+<section id="hero">
+  <svg id="strings" aria-hidden="true"></svg>
+  <svg id="ribbons" viewBox="0 0 1000 800" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id="rg" x1="0" x2="1"><stop offset="0" stop-color="#ff7aa8"/><stop offset="1" stop-color="#ffd36e"/></linearGradient></defs>
+    <path class="rb" stroke="url(#rg)" d="M-20 150 C 200 250, 120 450, 330 520 S 420 760, 520 820"/>
+    <path class="rb" stroke="url(#rg)" style="animation-delay:.8s" d="M1020 120 C 800 220, 900 420, 700 500 S 620 740, 520 820"/>
+  </svg>
+  <div class="hi neon">Today belongs to</div>
+  <h1>Happy Birthday,<br>Ritul!</h1>
+  <p class="tag">1 November, ek khaas din, ek khaas dost ke naam</p>
+  <button id="begin">Tap to open your gift</button>
+</section>
+
+<section>
+  <h2>Our little museum</h2>
+  <p class="sub">tap a photo to see it big, tap the pink play to hear a song</p>
+  <div id="cas"><div class="lab">Ritul's Playlist</div>
+    <div class="win"><div class="reel"></div><div class="reel"></div></div>
+    <div class="ctl"><button id="cp">Play</button><span id="tn"></span><button id="cn">Next</button></div></div>
+  <div id="wall"></div>
+</section>
+
+<section>
+  <h2>Words for you</h2>
+  <p class="sub">poetry and shayari, written with love</p>
+  <div id="words">
+    <div class="card"><h3>A little poem</h3>
+      <p class="poem">May this year open like a window,<br>with morning light and laughter in the air.<br>May the dreams you carry quietly<br>find the wings you never knew you had.<br>May every ordinary day feel golden,<br>and may you always know how loved you are.</p></div>
+    <div class="card"><h3>शायरी</h3>
+      <p class="shy">कुछ रिश्ते वक़्त के साथ पुराने नहीं होते,<br>बस और गहरे, और अपने हो जाते हैं।<br>तुम उन्हीं में से हो, जिनके होने भर से,<br>बेनाम से दिन भी त्योहार हो जाते हैं।</p>
+      <button class="pl" data-t="0" aria-label="Play song"></button></div>
+  </div>
+</section>
+
+<footer><p>Janamdin mubarak, Ritul.</p><small style="opacity:.65">With love, from Rajat</small></footer>
+</main>
+<div id="lb"><img alt=""></div>
+<audio id="au"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
